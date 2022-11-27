@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando a DOM</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com a DOM </h1>
+    <p> - Aprendendo a usar <strong>DOM</strong> em Javascript! </p>
+    <p>A DOM se estrutura como uma estrutura de dados árvore, na qual head e body são filhos de html, o qual é filho de 'document'. </p>
+    <p>Selecionando</p>
+    <ol>
+        <li>por Marca</li>
+        <li>por ID</li>
+        <li>por Nome</li>
+        <li>por Classe</li>
+        <li>por Seletor</li>
+    </ol>
+    <div id="msg">Clique aqui</div>
+    <div name="nome" >Exemplo Nome</div>
+    <div class="classe">Classe</div>
+    
+    
+    <script>
+        let corpo = document.body
+        let p1 = document.getElementsByTagName('p')[0]
+        window.document.write(document.URL)
+        
+        p1.style.color = 'blue'
+        document.write(p1.innerHTML)
+
+        let d = document.getElementById('msg')
+        d.style.background = 'green'
+
+        let nome = document.getElementsByName('nome')[0]
+        nome.innerHTML = "Olá"
+
+        let classe = document.getElementsByClassName('classe')[0]
+        classe.innerHTML = 'TesteClasse'
+
+        let seletor = document.querySelector('div#msg')
+        seletor.style.color = 'blue'
+    </script>
+</body>
+</html>
