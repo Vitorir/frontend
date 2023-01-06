@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+body {
+}
+
+div, section {
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: 0 23px 8px 20px;
+    box-sizing: border-box;
+}
+
+div {
+    margin-bottom: 8px;
+}
+
+section {
+    margin-top: 8px;
+}
