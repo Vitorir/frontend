@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100vw;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0px;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    padding: 4px;
+    margin: 0.5rem 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
