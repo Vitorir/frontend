@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">This is the first certification project for the Responsive Web Design course</p>
+
+    <form id="survey-form" action="" method="">
+        <fieldset>
+        
+            <label for="name" id="name-label" >Name<input id="name" type="text" required placeholder="Enter your name" value="Name">
+            </label>
+            <label for="email" id="email-label">Email<input type="email" name="email" id="email" required placeholder="Enter your email" value="Email"></label>
+            <label for="number" id="number-label">Age (optional)<input type="number" min="18" max="120" id="age" placeholder="Age" value="Age"></label>
+
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="" id="dropdown">
+                <option value="">Select Current Role</option>
+                <option value="1">Student</option>
+                <option value="2">Full time Job</option>
+                <option value="3">Other</option>
+            </select>
+            
+        </fieldset>
+
+        <fieldset>
+                <label for="definitely"><input type="radio" name="recommendation" id="definitely">Definitely</label>
+                <label for="maybe"><input type="radio" name="recommendation" id="maybe">Maybe</label>
+                <label for="not-sure"><input type="radio" name="recommendation" id="not-sure">Not Sure</label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <label for="feature">What is your favourite feature of freeCodeCamp?</label>
+            <select name="feature" id="feature">
+                <option value="">Select an option</option>
+                <option value="1">Challanges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <label for="front"><input type="checkbox" name="suggestions" id="front">Front-end Projects</label>
+            <label for="back"><input type="checkbox" name="suggestions" id="back">Back-end Projects</label>
+            <label for="challanges"><input type="checkbox" name="suggestions" id="challanges">Challanges</label>
+            <label for="open-source"><input type="checkbox" name="suggestions" id="open-source">Open Source Community</label>
+            <label for="wiki"><input type="checkbox" name="suggestions" id="wiki">Wiki</label>
+            <label for="forum"><input type="checkbox" name="suggestions" id="forum">Forum</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="comments">Comments<textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
+        </fieldset>
+
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+</body>
+</html>
