@@ -14,11 +14,14 @@
     <form id="survey-form" action="" method="">
         <fieldset>
         
-            <label for="name" id="name-label" >Name<input id="name" type="text" required placeholder="Enter your name" value="Name">
+            <label for="name" id="name-label" >Name<input id="name" type="text" required placeholder="Enter your name" value="">
             </label>
-            <label for="email" id="email-label">Email<input type="email" name="email" id="email" required placeholder="Enter your email" value="Email"></label>
+            <label for="email" id="email-label">Email<input type="email" name="email" id="email" required placeholder="Enter your email" value=""></label>
             <label for="number" id="number-label">Age (optional)<input type="number" min="18" max="120" id="age" placeholder="Age" value="Age"></label>
-
+            
+        </fieldset>
+        
+        <fieldset>
             <label for="dropdown">Which option best describes your current role?</label>
             <select name="" id="dropdown">
                 <option value="">Select Current Role</option>
@@ -26,15 +29,14 @@
                 <option value="2">Full time Job</option>
                 <option value="3">Other</option>
             </select>
-            
         </fieldset>
 
         <fieldset>
-                <label for="definitely"><input type="radio" name="recommendation" id="definitely">Definitely</label>
-                <label for="maybe"><input type="radio" name="recommendation" id="maybe">Maybe</label>
-                <label for="not-sure"><input type="radio" name="recommendation" id="not-sure">Not Sure</label>
+            <label for="">Would you recommend freeCodeCamp to a friend?</label>
+                <label for="definitely"><input type="radio" name="recommendation" id="definitely" class="inline">Definitely</label>
+                <label for="maybe"><input type="radio" name="recommendation" id="maybe" class="inline">Maybe</label>
+                <label for="not-sure"><input type="radio" name="recommendation" id="not-sure" class="inline">Not Sure</label>
             </fieldset>
-        </fieldset>
 
         <fieldset>
             <label for="feature">What is your favourite feature of freeCodeCamp?</label>
@@ -48,19 +50,23 @@
         </fieldset>
 
         <fieldset>
-            <label for="front"><input type="checkbox" name="suggestions" id="front">Front-end Projects</label>
-            <label for="back"><input type="checkbox" name="suggestions" id="back">Back-end Projects</label>
-            <label for="challanges"><input type="checkbox" name="suggestions" id="challanges">Challanges</label>
-            <label for="open-source"><input type="checkbox" name="suggestions" id="open-source">Open Source Community</label>
-            <label for="wiki"><input type="checkbox" name="suggestions" id="wiki">Wiki</label>
-            <label for="forum"><input type="checkbox" name="suggestions" id="forum">Forum</label>
+        <label for="improvement">What would you like to see improved? (Check all that apply)</label>
+        <div id="improvement">
+            <label for="front"><input type="checkbox" name="suggestions" id="front" class="inline">Front-end Projects</label>
+            <label for="back"><input type="checkbox" name="suggestions" id="back" class="inline">Back-end Projects
+            </label>
+            <label for="challanges"><input type="checkbox" name="suggestions" id="challanges" class="inline">Challanges</label>
+            <label for="open-source"><input type="checkbox" name="suggestions" id="open-source" class="inline">Open Source Community</label>
+            <label for="wiki"><input type="checkbox" name="suggestions" id="wiki" class="inline">Wiki</label>
+            <label for="forum"><input type="checkbox" name="suggestions" id="forum" class="inline">Forum</label>
+        </div>
         </fieldset>
 
         <fieldset>
-            <label for="comments">Comments<textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
+            <label for="comments">Any comments or suggestions?<textarea name="comments" id="comments" cols="30" rows="10"></textarea></label>
         </fieldset>
 
-        <button type="submit" value="Submit">Submit</button>
+        <input type="submit" value="Submit"></input>
     </form>
 </body>
 </html>
