@@ -17,6 +17,7 @@ form {
     max-width: 500px;
     min-width: 300px;
     width: 100vw;
+    padding-bottom: 2em;
 }
 
 fieldset {
@@ -29,13 +30,31 @@ fieldset:last-of-type {
     border-bottom: none;
 }
 
+.inline {
+    display: inline;
+    width: unset;
+    margin: 0px 0.5em 0px 0px;
+    vertical-align: middle;
+}
+
 label {
     display: block;
     padding: 4px;
     margin: 0.5rem 0;
 }
 
-input, select, textarea {
+input, textarea {
+    min-height: 2em;
+    color: #000000;
+}
+
+input, select, textarea, button {
     width: 100%;
     margin: 10px 0px 0px 0px;
+    min-height: 2em;
+}
+
+input[type="submit"] {
+    background-color: #3b3b;
+    border: none;
 }
