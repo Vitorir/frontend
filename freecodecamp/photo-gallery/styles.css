@@ -3,7 +3,30 @@
 }
 
 body {
-    margin: unset;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    /* verticalmente centralizar items */
+    margin: 0 auto;
+    padding: 20px 10px;
+    max-width: 1400px;
 }
 
 .gallery img {
