@@ -68,6 +68,10 @@ p {
     height: 5px;
 }
 
+.right {
+    justify-content: flex-end;
+}
+
 .label {
     border: 2px solid black;
     width: 270px;
