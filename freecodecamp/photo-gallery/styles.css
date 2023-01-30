@@ -27,10 +27,19 @@ body {
     margin: 0 auto;
     padding: 20px 10px;
     max-width: 1400px;
+    /* Adicionar espaços a itens em flex e grid */
+    gap: 16px;
+    border-radius: 10px;    
 }
 
 .gallery img {
     width: 100%;
     max-width: 350px;
     height: 300px;
+    object-fit: cover;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
 }
