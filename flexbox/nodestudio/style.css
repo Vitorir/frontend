@@ -6,7 +6,8 @@
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 200px;
     background-color: #ccc;
 }
@@ -16,4 +17,5 @@
     color: #fff;
     padding: 20px;
     margin: 5px;
+    width: 50%;
 }
