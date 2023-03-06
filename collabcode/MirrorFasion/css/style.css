@@ -14,9 +14,19 @@ body {
 }
 
 .menu-opcoes li {
-    font-family: 15px;
+    display: inline;
+    margin-left: 20px;
 }
+
+.sacola {
+    padding-top: 8px;
+} 
 
 .menu-opcoes a {
     color: #003366;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
 }
